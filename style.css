@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    height: 100vh;
+    background-color: palegoldenrod;
+}
+img {
+    height: 300px;
+    width: 300px;
+}
+.books {
+    background-image: url(/img/Developing.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+}
+main {
+    width: 100vw;
+    border: 2px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: baseline;
+
+}
