@@ -5,12 +5,20 @@
 
 }
 body {
-    height: 100vh;
-    background-color: palegoldenrod;
+    height: 100%;
+    width: 100vw;
+    background-color: #fdf6e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
 img {
     height: 300px;
     width: 300px;
+    border-radius: 10px;
+
 }
 .books {
     background-image: url(/img/Developing.jpg);
@@ -18,13 +26,23 @@ img {
     background-position: center;
     height: 300px;
     width: 300px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    justify-self: center;
+    align-self: center;
+
 }
+.books:hover {
+    transform: scale(1.1);
+
+}
+
 main {
-    width: 100vw;
-    border: 2px;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    align-items: baseline;
-
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
 }
